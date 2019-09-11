@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 10 15:55:08 2019
-
 @author: gaura
 """
+
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,8 +11,13 @@ y = np.sin(x)
 z = np.cos(x)
 
 plt.plot(x,y,x,z)
+t = np.tan(x)
+plt.plot(x,y,x,z,x,t)
 plt.xlabel('Values from 0 to 4pi')
 plt.ylabel('sin(x) and cos(x)')
 plt.title('sin and cos function for one period')
 plt.legend('sin(x)', 'cos(x)')
+plt.ylabel('sin(x), cos(x) and tan(x)')
+plt.title('sin,cos and tan function for one period')
+plt.legend('sin(x)', 'cos(x)', 'tan(x)')
 plt.show()
